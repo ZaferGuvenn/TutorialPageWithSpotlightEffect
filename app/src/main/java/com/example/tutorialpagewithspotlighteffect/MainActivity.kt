@@ -1,6 +1,7 @@
 package com.example.tutorialpagewithspotlighteffect
 
 import android.os.Bundle
+import android.view.MotionEvent
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
@@ -42,7 +43,7 @@ class MainActivity : AppCompatActivity() {
             targetView.getLocationInWindow(location)
             val centerX = location[0] + targetView.width / 2f
             val centerY = location[1] + targetView.height / 2f
-            spotlightView.setSpotlight(centerX, centerY, targetView.width / 2f)
+            spotlightView.setSpotlight(centerX, centerY, targetView.width/2f)
 
 
             // To integrate it into your application,
